@@ -1,0 +1,26 @@
+
+#teste de aut no nav
+
+import pyautogui
+import time
+import pyperclip
+pyautogui.PAUSE = 1
+pyautogui.press('win')
+pyautogui.write('opera')
+pyautogui.press('enter')
+time.sleep(5)
+pyautogui.click(190,57)
+teste="https://drive.google.com/drive/folders/1wRTFw0sUVBjRr4hW5U9LF7DjLixRyxym"
+pyperclip.copy(teste)
+pyautogui.hotkey('ctrl','v')
+pyautogui.press('enter')
+time.sleep(5)
+pyautogui.click(811, 685, clicks=1)
+pyautogui.click(890,187)
+pyautogui.click(675,559)
+pyautogui.press('win')
+pyautogui.write('Vendas-Dez')
+pyautogui.press('enter')
+time.sleep(4)
+pyautogui.alert('teste finalizado com sucesso')
+
